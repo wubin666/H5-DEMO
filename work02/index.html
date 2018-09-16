@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="img/home.png">
+		<link rel="stylesheet" href="css/work02.css" />
+		<title>个人信息页面</title>
+	</head>
+	<script>
+		window.onload=function(){
+		  	var re=/[0-9]+/
+			var email=document.getElementById('email');
+			var list=document.getElementById('emailList');
+			email.onkeyup=function(){
+				if(re.test(email.value)){
+					for(var i=0;i<5;i++){
+						list.children[i].value=list.children[i].value.replace(/\d+/,email.value);
+						
+					}
+				}
+			}
+		 } 
+		</script>
+	<body>
+		<h2>请填写个人信息</h2>
+		<form action="#" method="get" id="form">
+			<fieldset id="div1">
+            	<legend>基本信息</legend>
+            	姓名<input type="text" name="name1" placeholder= "请输入姓名" autofocus="autofocus" required="required"/>
+            	<b>*</b>
+            	<br/>
+            	年龄<input type="number" name="age" min="1" max="100" step="1" value="20"/>
+            </fieldset>
+            <br/>
+            <fieldset id="div2">
+            	<legend>你想在哪里收到邮件？</legend>
+            	邮箱<input type="email" id="email" list="emailList" placeholder="请输入邮箱" autocomplete="on"
+            	 required="required" results/><b>*</b>
+            	<datalist id="emailList">
+            		<option>123@qq.com</option>
+			        <option>123@163.com</option>
+			        <option>123@gmail.com</option>
+			        <option>123@yehoo.com.cn</option>
+			        <option>123@126.com</option>
+            	</datalist>
+            </fieldset>
+            <br/>
+            <fieldset id="div3">
+            	<legend>收入情况</legend>
+            	月收入
+            	<select value="20k+">
+            		<option>20k+</option>
+            		<option>30k+</option>
+            		<option>40k+</option>
+            	</select>
+            	<br/>
+            	银行卡<input type="text" name="card"/>
+            	有效期<input type="date" name="datedemo" />
+            </fieldset>
+            <br/>
+            <fieldset id="div4">
+            	<legend>选取提交文件</legend>
+            	文件<input type="file" name="file"> 
+            </fieldset>
+            <br/>
+            <input type="submit" value="提交"/>
+		</form>
+	</body>
+</html>

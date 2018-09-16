@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<link rel="icon" href="img/music1.png">
+	<link rel="stylesheet" href="css/work01.css" />
+	<title>音乐播放器</title>
+</head>
+<script>
+	function play1(){
+		var audio1=document.getElementById('audio1');
+		var audio=document.getElementById('audio');
+		audio.src=audio1.src;
+		console.log(audio.src)
+	}
+	function play2(){
+		var audio2=document.getElementById('audio2');
+		var audio=document.getElementById('audio');
+		audio.src=audio2.src;
+		console.log(audio.src)
+	}
+</script>
+<header>
+	<div id="title1">在线音乐</div>
+	<div id="title2">本地音乐</div>
+<header/>
+<br/>
+<article>
+	<div id="music1">
+		<audio src="img/刘瑞琦房间.mp3" id="audio1"></audio>
+	        房间-刘瑞琦&nbsp;&nbsp;&nbsp;
+	    <input type="button" id="play" onclick="play1()" value="播放"/>
+	</div>
+	<div id="music2">
+		<audio src="img/许嵩有何不可.mp3" id="audio2"></audio>
+	        有何不可-许嵩
+	    <input type="button" id="play" onclick="play2()" value="播放"/>
+    </div>
+</article>	
+<br/>
+<br/>
+<br/>
+<br/>
+<footer>
+    <audio src="img/刘瑞琦房间.mp3" controls="controls"  id="audio"  autoplay="autoplay">
+	</audio>
+</footer>
+</html>

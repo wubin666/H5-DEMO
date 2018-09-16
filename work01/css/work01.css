@@ -1,0 +1,30 @@
+#title1{
+	height: 40px;
+	width: 185px;
+	text-align: center;
+	background-color: dodgerblue;
+	padding-top:10px;
+	color: black;
+	float: left;
+}
+#title2{
+	height: 40px;
+	width: 185px;
+	text-align: center;
+	background-color:black;
+	padding-top:10px;
+	color:white;
+	float: left;
+}
+#music1{
+	height:40px;
+	width: 370px;
+	padding-top:40px;
+}
+#music2{
+	height:40px;
+	width: 370px;
+}
+input{
+	margin-left: 200px;
+}
