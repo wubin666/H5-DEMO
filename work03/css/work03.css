@@ -1,0 +1,33 @@
+legend{
+	color: red;
+	font-weight:700px;
+	font-size:30px;
+}
+#div1{
+	width:800px ;
+	height: 250px;
+}
+#div2{
+	width:760px ;
+	height: 50px;
+}
+#div{
+	width:758px ;
+	height: 48px;
+}
+#div3{
+	width:760px ;
+	height: 100px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 25px;
+}
+span{
+	width:30px ;
+	height:30px;
+	float: left;
+	margin: 10px;
+}
+.top{
+	margin-top: 6px;
+}
