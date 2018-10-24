@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    <style>
+        body{ 
+        	background-image: url(img/bg3.JPG); 
+        } 
+        div{
+        	width:170px; 
+        	height: 200px;
+        	margin: 20px 15px;
+        	box-shadow: 4px 4px saddlebrown;
+        	background-color: white;
+        	float: left;
+        }
+        img{
+        	width:150px; 
+        	height: 140px; 
+        	margin: 10px 10px;
+        }
+        p{
+        	text-align: center;
+        	margin-top: 0px;
+        }
+        #div1{
+        	transform: rotate(-5deg);
+        }
+        #div2{
+        	transform: rotate(5deg);
+        }
+        #div3{
+        	transform: rotate(-5deg);
+        }
+        #div4{
+        	transform: rotate(1deg);
+        }
+        #div5{
+        	transform: rotate(2deg);
+        }
+        #div6{
+        	transform: rotate(-5deg);
+        }
+        #div1:hover,#div2:hover,#div3:hover,#div4:hover,#div5:hover,#div6:hover{
+        	transform: rotate(0) scale(1.2,1.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+    	<img src="img/11.jpg"/>
+    	<p>相识</p>
+    </div>
+    <div id="div2">
+    	<img src="img/22.JPG"/>
+    	<p>凝视</p>
+    </div>
+    <div id="div3">
+    	<img src="img/33.JPG"/>
+    	<p>甜睡</p>
+    </div>
+    <div id="div4">
+    	<img src="img/44.JPG"/>
+    	<p>逗乐</p>
+    </div>
+    <div id="div5">
+    	<img src="img/55.JPG"/>
+    	<p>奔跑</p>
+    </div>
+    <div id="div6">
+    	<img src="img/66.JPG"/>
+    	<p>漠视</p>
+    </div>
+</body>
+</html>
